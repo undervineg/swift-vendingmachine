@@ -4,12 +4,29 @@
 ![](machine3.png)
 ![](machine4.png)
 
+<br/>
+
 ## 깃헙 Issue/Project 탭 활용하기
 - 프로젝트 > 마일스톤 > 이슈 순으로 작업단위 쪼개어 작은 단위단위에 집중할 수 있음. 각 작업단위에 발생하는 이슈사항 관리 가능. (문제점, 해결방법 등..)
 - 깃헙 Issue, Project 탭 사용하기 —> 회사에서는 지라 등 프로젝트 매니지 툴 사용.
 - 4시간 이하로 일감을 나누는 것이 적합.
 - 1~2주에 한 번씩 스크럼으로 일감 진행을 검토하는 날이 있음.
 - 하루종일 일감 쪼개는 일만 하는 날도 있음.
+
+<br/>
+
+## CocoaPod으로 Swift Lint 설치하기
+- 팀에서 정한 규칙을 따르지 않는 코드를 식별하고 표시하여 일관된 코드를 작성하는 데 도움을 줌
+
+### 설치 (feat. CocoaPod)
+- .xcodeproj 파일이 있는 폴더에서 `pod init`
+- `vim Podfile` 으로 Podfile 수정: `pod 'SwiftLint'` 추가
+
+### Xcode에 적용
+- Target > Build Phases > New Run Script Phase
+- `${PODS_ROOT}/SwiftLint/swiftlint` 추가
+
+<br/>
 
 ## Unit Test 란
 > 코드의 특정 모듈이 의도된 대로 정확히 작동하는지 검증하는 절차로, 모든 함수와 메소드에 대한 테스트 케이스를 작성하는 절차
