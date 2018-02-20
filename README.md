@@ -21,6 +21,7 @@
 ### 설치 (feat. CocoaPod)
 - .xcodeproj 파일이 있는 폴더에서 `pod init`
 - `vim Podfile` 으로 Podfile 수정: `pod 'SwiftLint'` 추가
+- `pod install` 시 .xcworkspace 파일 생성됨 (이 파일로 작업해야 한다.)
 
 ### Xcode에 적용
 - Target > Build Phases > New Run Script Phase
